@@ -13,7 +13,7 @@ export default function Home() {
 
         <div className="bg-white p-5 rounded-2xl shadow-lg">
           <QRCodeSVG
-            value="http://localhost:3000/welcome"
+            value="https://qr-smoky-seven.vercel.app/welcome"
             size={250}
           />
         </div>
