@@ -113,8 +113,8 @@ className="object-contain"
   <Image
   src="/youtube1.png"
   alt=""
-  width={110}
-  height={110}
+  width={80}
+  height={80}
   className="object-contain"
   />
 </div>
