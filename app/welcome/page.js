@@ -20,7 +20,7 @@ export default function Welcome() {
         {/* Logo */}
         <div className="relative z-10 mt-8">
           <Image
-            src="/bite2.png"
+            src="/logo2.png"
             alt="Hello Bite Logo"
             width={190}
             height={190}
@@ -54,8 +54,19 @@ export default function Welcome() {
           href="/social"
           className="relative z-10 mt-10 bg-[#E53935] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#c62828] hover:scale-105 transition-all duration-200"
         >
-          Connect With Us
+          Click me
         </a>
+
+       <div className="mt-6">
+         <i className="text-[#E53935] text-center mb-2 text-xl font-semibold">To connect us</i>
+        <Image
+        src="/logo.png"
+        alt=""
+        width={150}
+        height={150}
+      className="object-contain mt-4"
+        />
+       </div>
 
         {/* Bottom Red Wave */}
         <div className="absolute bottom-0 left-0 w-full h-28 bg-[#E53935] rounded-t-[50%] translate-y-12" />

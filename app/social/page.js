@@ -45,11 +45,15 @@ export default function Social() {
             href="https://www.instagram.com/hellobitescafe?igsi=bWVxNnczZ24xdmU1"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center gap-4
-                       bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737]
-                       text-white px-6 py-4 rounded-2xl
-                       shadow-lg hover:scale-[1.03]
-                       transition-all duration-200"
+     className="
+  w-full flex items-center gap-4
+  bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737]
+  text-white px-6 py-4 rounded-2xl
+  shadow-lg
+  scale-[0.97] sm:scale-100
+  hover:scale-[1.03]
+  transition-transform duration-200
+"
           >
             <FaInstagram size={32} />
 
@@ -93,7 +97,35 @@ export default function Social() {
           </a>
 
         </div>
-
+<div className="mt-4">
+  <Image
+  src="/whatshapp.png"
+  alt=""
+  width={150}
+  height={150}
+  className="object-contain"
+  />
+</div>
+<div className="flex mt-4 gap-4">
+  <span>
+<Image
+src="/facebook.png"
+alt=""
+width={50}
+height={50}
+className="object-contain"
+/>
+  </span>
+  <span>
+<Image
+src="/instagram.png"
+alt=""
+width={50}
+height={50}
+className="object-contain"
+/>
+  </span>
+</div>
         {/* Bottom Red Wave */}
         <div
           className="absolute bottom-0 left-0 w-full h-28 sm:mt-10
