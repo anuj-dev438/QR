@@ -97,16 +97,9 @@ export default function Social() {
           </a>
 
         </div>
-<div className="mt-2">
-  <Image
-  src="/whatshapp.png"
-  alt=""
-  width={120}
-  height={120}
-  className="object-contain"
-  />
-</div>
-<div className="flex mt-2 gap-4">
+        <div className="flex mt-2 gap-4 items-center justify-center mb-4">
+
+
   <span>
 <Image
 src="/facebook.png"
@@ -116,6 +109,15 @@ height={50}
 className="object-contain"
 />
   </span>
+  <div className="mt-2">
+  <Image
+  src="/youtube1.png"
+  alt=""
+  width={80}
+  height={80}
+  className="object-contain"
+  />
+</div>
   <span>
 <Image
 src="/instagram.png"
