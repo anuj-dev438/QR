@@ -64,12 +64,12 @@ export default function Welcome() {
         alt=""
         width={150}
         height={150}
-      className="object-contain mt-4"
+      className="object-contain mt-2"
         />
        </div>
 
         {/* Bottom Red Wave */}
-        <div className="absolute bottom-0 left-0 w-full h-28 bg-[#E53935] rounded-t-[50%] translate-y-12" />
+        <div className="absolute bottom-0 left-0 w-full h-28 bg-[#E53935] rounded-t-[50%] translate-y-12 mt-4" />
 
       </div>
 
