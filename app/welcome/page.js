@@ -29,7 +29,7 @@ export default function Welcome() {
         </div>
 
         {/* Welcome */}
-        <div className="relative z-10 text-center mt-8">
+        <div className="relative z-10 text-center mt-2">
 
           <p className="text-xl font-semibold italic text-[#3b1f00]">
             → Welcome to
@@ -43,7 +43,7 @@ export default function Welcome() {
             Welcomes You All!
           </p>
 
-          <div className="flex justify-center mt-5 text-[#E53935]">
+          <div className="flex justify-center mt-2 text-[#E53935]">
             <ArrowRight />
           </div>
 
@@ -52,12 +52,12 @@ export default function Welcome() {
         {/* Button */}
         <a
           href="/social"
-          className="relative z-10 mt-10 bg-[#E53935] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#c62828] hover:scale-105 transition-all duration-200"
+          className="relative z-10 mt-4 bg-[#E53935] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#c62828] hover:scale-105 transition-all duration-200"
         >
           Click me
         </a>
 
-       <div className="mt-6">
+       <div className="mt-4">
          <i className="text-[#E53935] text-center mb-2 text-xl font-semibold">To connect us</i>
         <Image
         src="/logo.png"
