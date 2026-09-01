@@ -18,9 +18,9 @@ export default function Social() {
         </div>
 
         {/* Logo */}
-        <div className="relative z-8 mt-4">
+        <div className="relative z-8 mt-2">
           <Image
-            src="/bite2.png"
+            src="/logo2.png"
             alt="Hello Bite Logo"
             width={180}
             height={180}
@@ -34,11 +34,11 @@ export default function Social() {
             → Connect With Us ←
           </h1>
 
-          <div className="h-1 w-32 bg-[#E53935] mx-auto mt-3 rounded-full" />
+          <div className="h-1 w-32 bg-[#E53935] mx-auto mt-2 rounded-full" />
         </div>
 
         {/* Social Buttons */}
-        <div className="relative z-10 w-full mt-8 flex flex-col gap-5">
+        <div className="relative z-10 w-full mt-4 flex flex-col gap-5">
 
           {/* Instagram */}
           <a
@@ -97,16 +97,16 @@ export default function Social() {
           </a>
 
         </div>
-<div className="mt-4">
+<div className="mt-2">
   <Image
   src="/whatshapp.png"
   alt=""
-  width={150}
-  height={150}
+  width={120}
+  height={120}
   className="object-contain"
   />
 </div>
-<div className="flex mt-4 gap-4">
+<div className="flex mt-2 gap-4">
   <span>
 <Image
 src="/facebook.png"
