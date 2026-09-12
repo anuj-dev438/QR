@@ -75,7 +75,7 @@ const [showThanks, setShowThanks] = useState(false);
 
   function handleSubmit() {
     if (!name.trim() || !comment.trim() || rating === 0) {
-      setError("Naam, rating aur comment teeno bharna zaroori hai.");
+      setError("Please fill the all information including rating.");
       return;
     }
     setReviews([
