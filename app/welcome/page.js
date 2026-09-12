@@ -39,8 +39,8 @@ export default function Welcome() {
             Hello Bite
           </h1>
 
-          <p className="text-xl font-bold italic text-[#3b1f00] mt-4">
-            Welcomes You All!
+          <p className="text-lg  font-bold italic text-[#3b1f00] mt-4">
+            Thank you for connecting with Hello Biets Social Media
           </p>
 
           <div className="flex justify-center mt-2 text-[#E53935]">

@@ -1,8 +1,9 @@
 "use client";
-
+import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
+import { BiRightArrow } from "react-icons/bi";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
-
+import Link from 'next/link';
 export default function Social() {
   return (
     <main className="min-h-screen bg-[#FFC107] flex justify-center">
@@ -128,6 +129,12 @@ className="object-contain"
 />
   </span>
 </div>
+
+
+ <Link href="/social/Review&Rating"><button className="ml-auto sm:mb-10 mb-6 flex items-center gap-2 rounded-xl bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:shadow-cyan-500/20 active:scale-95 group">
+  <span>Rating & Review</span>
+  <ArrowRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 text-cyan-400" />
+</button></Link>
         {/* Bottom Red Wave */}
         <div
           className="absolute bottom-0 left-0 w-full h-28 sm:mt-10
