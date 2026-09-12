@@ -27,7 +27,7 @@ const initialReviews = [
     rating: 5,
     date:"2 hour ago",
     comment:
-      "So delicious food of Hello Bite",
+      "So delicious food of Hello Bites",
     helpful: 12,
   },
 ]
@@ -97,11 +97,21 @@ const [showThanks, setShowThanks] = useState(false);
     setShowThanks(true)
   }
 
-  function markHelpful(id) {
-    setReviews((rs) =>
-      rs.map((r) => (r.id === id ? { ...r, helpful: r.helpful + 1 } : r))
-    );
-  }
+function markHelpful(id) {
+  setReviews((rs) =>
+    rs.map((r) => {
+      if (r.id !== id || r.helped) {
+        return r;
+      }
+
+      return {
+        ...r,
+        helpful: r.helpful + 1,
+        helped: true,
+      };
+    })
+  );
+}
 
   return (
     <div
@@ -154,7 +164,7 @@ const [showThanks, setShowThanks] = useState(false);
         {/* header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl mb-1" style={{ color: palette.text, fontWeight: 700 }}>
-            Hello Bite
+            Hello Bites
           </h1>
           <p style={{ color: palette.muted, fontFamily: "sans-serif", fontSize: 14 }}>
             Customer Reviews aur Ratings
@@ -286,12 +296,19 @@ Not Found this rating
                     {r.comment}
                   </p>
                   <button
-                    onClick={() => markHelpful(r.id)}
-                    className="flex items-center gap-1 mt-2"
-                    style={{ fontFamily: "sans-serif", fontSize: 12, color: palette.muted }}
-                  >
-                    <ThumbsUp size={13} /> Helpful ({r.helpful})
-                  </button>
+  onClick={() => markHelpful(r.id)}
+  disabled={r.helped}
+  className="flex items-center gap-1 mt-2"
+  style={{
+    fontFamily: "sans-serif",
+    fontSize: 12,
+    color: r.helped ? palette.chili : palette.muted,
+    cursor: r.helped ? "not-allowed" : "pointer",
+  }}
+>
+  <ThumbsUp size={13} />
+  {r.helped ? "Helpful ✓" : "Helpful"} ({r.helpful})
+</button>
                 </div>
               </div>
             </div>
