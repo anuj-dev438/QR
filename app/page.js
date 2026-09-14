@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         <p className="mt-5 text-gray-600">
-          Scan to connect with Hello Bite
+          Scan to connect with Hello Bites
         </p>
 
       </div>
