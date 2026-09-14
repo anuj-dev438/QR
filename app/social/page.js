@@ -137,7 +137,7 @@ className="object-contain"
 
  <button 
  onClick={()=> setshowPopup(true)}
- className=" sm:mb-14 mb-10 flex items-center gap-2 rounded-xl  bg-slate-900 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:shadow-cyan-500/20 active:scale-95 group">
+ className=" sm:mb-14 mb-10 flex items-center gap-2 rounded-xl bg-red-600 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:shadow-cyan-500/20 active:scale-95 group">
   <span className='text-white'>Rating & Review</span>
   <ArrowRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 text-white" />
 </button>
@@ -160,7 +160,7 @@ className='absolute right-4 top-4 text-gray-500'
 </p>
 <Link href="/social/Review&Rating"
 onClick={()=> setshowPopup(false)}
-className='mt-6 block rounded-xl bg-slate-900  px-5 py-3 text-center font-medium text-white'
+className='mt-6 block rounded-xl bg-red-600 px-5 py-3 text-center font-medium text-white'
 
 >
   Open Review & Rating
