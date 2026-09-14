@@ -36,7 +36,7 @@ export default function Welcome() {
           </p>
 
           <h1 className="text-5xl sm:text-6xl font-black italic text-[#E53935] mt-3">
-            Hello Bite
+            Hello Bites
           </h1>
 
           <p className="text-lg  font-bold italic text-[#3b1f00] mt-4">

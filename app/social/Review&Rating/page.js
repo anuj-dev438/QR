@@ -215,7 +215,7 @@ function markHelpful(id) {
                 color: filter === f ? "#fff" : palette.text,
               }}
             >
-              {f === "all" ? "Sabhi" : `${f} ★`}
+              {f === "all" ? "All" : `${f} ★`}
             </button>
           ))}
           <button
