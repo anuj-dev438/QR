@@ -36,7 +36,7 @@ export default function Social() {
         {/* Heading */}
         <div className="relative z-10 text-center mt-4">
           <h1 className="text-2xl sm:text-3xl font-black italic text-[#3b1f00]">
-            → Connect With Us ←
+            → Connect with us ←
           </h1>
 
           <div className="h-1 w-32 bg-[#E53935] mx-auto mt-2 rounded-full" />
